@@ -138,7 +138,7 @@ func (s *Service) Connect(address string) error {
 		return err
 	}
 	s.c = pb.NewPCFGClient(s.grpcConn)
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*10)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*60)
 	defer cancel()
 	r, err := s.c.Connect(ctx, &pb.Empty{}, grpc.MaxCallRecvMsgSize(math.MaxInt32))
 	if err != nil {
@@ -187,7 +187,7 @@ func (s *Service) Run(done <-chan bool) error {
 		case <-done:
 			return nil
 		default:
-			ctx, cancel := context.WithTimeout(context.Background(), time.Minute*5)
+			ctx, cancel := context.WithTimeout(context.Background(), time.Minute*50)
 			then := time.Now()
 			res, err := s.c.GetNextItems(ctx, &pb.NextRequest{}, grpc.MaxCallRecvMsgSize(math.MaxInt32))
 			if err != nil {
@@ -346,7 +346,7 @@ func (s *Service) Disconnect() error {
 	if s.grpcConn == nil {
 		return errors.New("no active grpc connection")
 	}
-	ctx, cancel := context.WithTimeout(context.Background(), time.Second*2)
+	ctx, cancel := context.WithTimeout(context.Background(), time.Second*60)
 	defer cancel()
 	if _, err := s.c.Disconnect(ctx, &pb.Empty{}); err != nil {
 		return err
