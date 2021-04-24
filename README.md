@@ -67,7 +67,7 @@ INFO[0000] Listening on port 12345
 
 ./pcfg-manager client -s localhost:12345 --generate-only
 INFO[0011] client [::1]:35566 connected
-INFO[0011] sending chunk[1], preTerminals: 46, terminals: 999 to [::1]:35566 in 51.836µs, size: 883
+INFO[0011] sending chunk[1], preTerminals: 46, terminals: 999 to [::1]:35566 in 51.836¬µs, size: 883
 INFO[0000] received 46 preTerminals and 0 terminals
 aaparken
 123456789
@@ -98,15 +98,14 @@ Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
 ...
 ```
 
-
 # The work was presented in:
-HRANICK› Radek, LIäTIAK Filip, MIKUä D·vid and RYäAV› Ondrej.
+HRANICK√ù Radek, LI≈†TIAK Filip, MIKU≈† D√°vid and RY≈†AV√ù Ondrej.
 On Practical Aspects of PCFG Password Cracking.
 In: Data and Applications Security and Privacy. Charleston: Springer Nature Switzerland AG, 2019,
 pp. 43-60. ISBN 978-3-030-22478-3. ISSN 0302-9743.
 Available from: https://link.springer.com/chapter/10.1007%2F978-3-030-22479-0_3
 
-HRANICK› Radek, ZOBAL Luk·ö, RYäAV› Ondrej, KOL¡R Duöan and MIKUä D·vid.
+HRANICK√ù Radek, ZOBAL Luk√°≈°, RY≈†AV√ù Ondrej, KOL√ÅR Du≈°an and MIKU≈† D√°vid.
 Distributed PCFG Password Cracking.
 In: Computer Security - ESORICS 2020. Lecture notes in Computer Science.
 Guildford: Springer Nature Switzerland AG, 2020, pp. 701-719. ISBN 978-3-030-58950-9.
