@@ -1,6 +1,8 @@
 # Parallel/distributed PCFG Manager
 **A high-performance password geuess generator**
+
 Dávid Mikuš, Radek Hranický, Filip Lištiak, Lukáš Zobal
+
 This is a proof-of-concept tool created under NES@FIT research group in cooperation with the Fitcrack team: https://fitcrack.fit.vutbr.cz/team/
 (Currently used for distributed PCFG attacks in the Fitcrack system)
 
